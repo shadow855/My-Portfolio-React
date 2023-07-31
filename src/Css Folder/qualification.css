@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(32, 31, 31);
+    font-family: 'Rancho', serif;
+}
+
+/* qualification css */
+
+.intro-quali {
+    will-change: transform;
+    /* border: 2px solid red; */
+    margin-top: 80px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    animation: intro-quali-anim 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes intro-quali-anim {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.intro-quali-img {
+    /* border: 2px solid white; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.intro-quali-text {
+    /* border: 2px solid white; */
+    margin-right: 30px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro-quali-text h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.intro-quali-text h1+p {
+    font-size: 30px;
+    color: white;
+}
+
+.intro-quali-text p {
+    font-size: 30px;
+    color: #ccc;
+}
+
+.my-degrees-h2 {
+    will-change: transform;
+    margin: 150px auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    animation: my-degrees-h2-anim 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes my-degrees-h2-anim {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.my-degrees-h2 h2 {
+    font-size: 50px;
+    color: white;
+}
+
+/* degree-1 css */
+
+.degree-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    margin-top: 50px;
+}
+
+.degree-1-img {
+    will-change: transform;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(227, 64, 95);
+    border-radius: 100%;
+    box-shadow: 0 0 8px rgb(227, 64, 95);
+    animation: my-degree-1-img-anim 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+.degree-1-img:hover {
+    box-shadow: 0px 4px 18px rgb(227, 64, 95);
+}
+
+.degree-1-img img {
+    height: 80px;
+    width: 80px;
+}
+
+.degree-1-desc {
+    will-change: transform;
+    display: none;
+    height: 200px;
+    width: 900px;
+    border: 2px solid rgb(227, 64, 95);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(227, 64, 95);
+    animation: degree-left-move 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.degree-1-desc:hover {
+    box-shadow: 0px 4px 18px rgb(227, 64, 95);
+}
+
+.degree-1-desc-head {
+    color: white;
+    font-size: 25px;
+    background-color: rgb(227, 64, 95);
+    border-radius: 5px 5px 0 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.degree-1-desc-detail {
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+/* degree-2 css */
+
+.degree-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    margin-top: 150px;
+}
+
+.degree-2-img {
+    will-change: transform;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(227, 64, 95);
+    border-radius: 100%;
+    box-shadow: 0 0 8px rgb(227, 64, 95);
+    animation: my-degree-1-img-anim 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+.degree-2-img:hover {
+    box-shadow: 0px 4px 18px rgb(227, 64, 95);
+}
+
+.degree-2-img img {
+    height: 80px;
+    width: 80px;
+}
+
+.degree-2-desc {
+    will-change: transform;
+    display: none;
+    height: 240px;
+    width: 900px;
+    border: 2px solid rgb(227, 64, 95);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(227, 64, 95);
+    animation: degree-right-move 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.degree-2-desc:hover {
+    box-shadow: 0px 4px 18px rgb(227, 64, 95);
+}
+
+.degree-2-desc-head {
+    color: white;
+    font-size: 25px;
+    background-color: rgb(227, 64, 95);
+    border-radius: 5px 5px 0 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.degree-2-desc-detail {
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+/* degree-3 css */
+
+.degree-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    margin-top: 150px;
+}
+
+.degree-3-img {
+    will-change: transform;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(227, 64, 95);
+    border-radius: 100%;
+    box-shadow: 0 0 8px rgb(227, 64, 95);
+    animation: my-degree-1-img-anim 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+.degree-3-img:hover {
+    box-shadow: 0px 4px 18px rgb(227, 64, 95);
+}
+
+.degree-3-img img {
+    height: 80px;
+    width: 80px;
+}
+
+.degree-3-desc {
+    will-change: transform;
+    display: none;
+    height: 200px;
+    width: 900px;
+    border: 2px solid rgb(227, 64, 95);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(227, 64, 95);
+    animation: degree-left-move 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.degree-3-desc:hover {
+    box-shadow: 0px 4px 18px rgb(227, 64, 95);
+}
+
+.degree-3-desc-head {
+    color: white;
+    font-size: 25px;
+    background-color: rgb(227, 64, 95);
+    border-radius: 5px 5px 0 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.degree-3-desc-detail {
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+/* degree-4 css */
+
+.degree-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    margin-top: 150px;
+}
+
+.degree-4-img {
+    will-change: transform;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(227, 64, 95);
+    border-radius: 100%;
+    box-shadow: 0 0 8px rgb(227, 64, 95);
+    animation: my-degree-1-img-anim 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+.degree-4-img:hover {
+    box-shadow: 0px 4px 18px rgb(227, 64, 95);
+}
+
+.degree-4-img img {
+    height: 80px;
+    width: 80px;
+}
+
+.degree-4-desc {
+    will-change: transform;
+    display: none;
+    height: 290px;
+    width: 900px;
+    border: 2px solid rgb(227, 64, 95);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(227, 64, 95);
+    animation: degree-right-move 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.degree-4-desc:hover {
+    box-shadow: 0px 4px 18px rgb(227, 64, 95);
+}
+
+.degree-4-desc-head {
+    color: white;
+    font-size: 25px;
+    background-color: rgb(227, 64, 95);
+    border-radius: 5px 5px 0 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.degree-4-desc-detail {
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+/* degree img animation keyframe */
+
+@keyframes my-degree-1-img-anim {
+    0% {
+        transform: perspective(400px) rotate3d(0, -1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(400px) rotate3d(0, -1, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(400px) rotate3d(0, -1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(0, -1, 0, -5deg);
+    }
+
+    100% {
+        transform: perspective(400px);
+        opacity: 1;
+    }
+}
+
+/* degree left/right animation keyframe */
+
+@keyframes degree-left-move {
+    0% {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes degree-right-move {
+    0% {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+/* responsiveness */
+
+@media screen and (max-width:1200px) {
+    .degree-1-desc, .degree-2-desc, .degree-3-desc, .degree-4-desc{
+        width: 600px;
+    }
+    .degree-3-desc{
+        height: 225px;
+    }
+    .degree-4-desc{
+        height: 320px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .degree-1-desc, .degree-2-desc, .degree-3-desc, .degree-4-desc{
+        width: 500px;
+    }
+    .degree-1-desc{
+        height: 225px;
+    }
+    .degree-2-desc{
+        height: 270px;
+    }
+    .degree-4-desc{
+        height: 380px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .intro-quali{
+        flex-direction: column;
+    }
+
+    .intro-quali-img img{
+        width: 600px;
+    }
+
+    .intro-quali-text{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .intro-quali-text h1{
+        font-size: 50px;
+    }
+    .intro-quali-text h1+p{
+        font-size: 25px;
+    }
+    .intro-quali-text p{
+        font-size: 25px;
+    }
+    .degree-1, .degree-2, .degree-3, .degree-4{
+        flex-direction: column;
+    }
+    .degree-2, .degree-3, .degree-4{
+        margin-top: 80px;
+    }
+    .degree-2-img, .degree-4-img{
+        order: -1;
+    }
+    .degree-1-img, .degree-2-img, .degree-3-img, .degree-4-img{
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .intro-quali-text h1{
+        font-size: 40px;
+    }
+    .intro-quali-text h1+p{
+        font-size: 20px;
+    }
+    .intro-quali-text p{
+        font-size: 20px;
+    }
+    .degree-1-desc, .degree-2-desc, .degree-3-desc, .degree-4-desc{
+        width: 400px;
+    }
+    .degree-4-desc{
+        height: 410px;
+    }
+    .intro-quali-img img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .degree-1-desc, .degree-2-desc, .degree-3-desc, .degree-4-desc{
+        width: 350px;
+    }
+    .degree-2-desc{
+        height: 340px;
+    }
+    .degree-4-desc{
+        height: 440px;
+    }
+    .intro-quali-img img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .degree-1-desc, .degree-2-desc, .degree-3-desc, .degree-4-desc{
+        width: 310px;
+    }
+    .degree-1-desc{
+        height: 260px;
+    }
+    .degree-2-desc{
+        height: 340px;
+    }
+    .degree-3-desc{
+        height: 260px;
+    }
+    .degree-4-desc{
+        height: 470px;
+    }
+    .intro-quali-img img{
+        width: 290px;
+    }
+}

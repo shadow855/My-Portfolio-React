@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(32, 31, 31);
+    font-family: 'Rancho', serif;
+}
+
+.navbar-brand img.circular-img {
+    border-radius: 50%;
+  }
+  .navbar-brand {
+    text-decoration: none;
+  }
+
+  .navbar-brand .ms-2 {
+    font-size: 25px; /* Adjust this value to set the desired font size for the text */
+    font-weight: bold; /* Optionally, you can set the font weight to bold or any other value */
+  }
+.navbar {
+    will-change: transform;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.541);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: slide-in 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar-toggler {
+    border-color: rgb(227, 64, 95); /* Change the border color of the toggle button */
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='rgb(227, 64, 95)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Change the background color of the three lines */
+  }
+
+.navbar li a {
+    cursor: none;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rancho', serif;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.navbar li a:hover {
+    background: linear-gradient(45deg, rgb(227, 64, 95), blue);
+    -webkit-background-clip: text; /* For compatibility with older WebKit browsers */
+    background-clip: text; /* Standard property for background clipping */
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar li a::before {
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    bottom: -5px;
+    width: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, rgb(227, 64, 95), blue);
+    transition: 0.5s;
+}
+
+.navbar li a:hover::before {
+    width: 100%;
+}
+
+  @media (max-width: 991.98px) {
+    .navbar-item-center ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
